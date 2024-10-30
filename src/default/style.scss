@@ -1,0 +1,76 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+/* block wrapper - this doesn't need any styles by default right now */
+.cq-block-wrapper {
+
+}
+
+/* block containter - some base styles */
+.cq-block-container {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* block containter - this is the default / narrow width styles */
+.cq-block-container--default {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:10px;
+}
+
+/* block container - this is the wide / full witdh styles */
+.cq-block-container--wide {
+    width: 100%;
+}
+
+/* block styles - default styles */
+.cq-block-item {
+    display: inline-block;
+    padding:10px;
+    width: calc(100% - 20px);
+}
+
+/* image styles */
+.cq-block-item__image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* block styles - 2 up grid */
+@media (min-width: 600px) {
+    .cq-block-container--2-grid	.cq-block-item {
+        width: calc(50% - 20px);
+    }
+}
+
+/* block styles - 3 up grid */
+@media (min-width: 600px) {
+    .cq-block-container--3-grid	.cq-block-item {
+        width: calc(50% - 20px);
+    }
+}
+@media (min-width: 1200px) {
+    .cq-block-container--3-grid .cq-block-item {
+        width: calc(33.3333% - 20px);
+    }
+}
+
+/* block styles - 4 up grid */
+@media (min-width: 600px) {
+    .cq-block-container--4-grid	.cq-block-item {
+        width: calc(50% - 20px);
+    }
+}
+@media (min-width: 1200px) {
+    .cq-block-container--4-grid .cq-block-item {
+        width: calc(25% - 20px);
+    }
+}
+
+
